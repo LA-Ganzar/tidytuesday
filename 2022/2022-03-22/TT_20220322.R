@@ -62,7 +62,7 @@ tyler %>%
            label = "Tyler is a regularly used name that rose\nto prominence in the 1980s and peaked \nin the year 1994, but has since declined.", 
            size = 4.5, hjust = 0, vjust = 0, lineheight = 0.9, color = "#ff5733")
 ggsave("/Users/leighannganzar/Desktop/Post-Doc/tidytuesday/tidytuesday/2022/2022-03-22/plot.png", 
-       height = 6, width = 10, dpi = 300)
+       height = 3, width = 5, dpi = 300)
 
 
 
