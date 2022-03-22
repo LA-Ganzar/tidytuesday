@@ -57,8 +57,12 @@ tyler %>%
            lineheight = 0.8, color = "#ff5733") +
   annotate(geom = "text", x = 2008, y = max(tyler$prop),
            label = "Peak year \nat 1994", 
-           size = 5, lineheight = 0.8, color = "#ff5733")
-ggsave("")
+           size = 5, lineheight = 0.8, color = "#ff5733") + 
+  annotate(geom = "text", x = 1884, y = 0.015,
+           label = "Tyler is a regularly used name that rose\nto prominence in the 1980s and peaked \nin the year 1994, but has since declined.", 
+           size = 4.5, hjust = 0, vjust = 0, lineheight = 0.9, color = "#ff5733")
+ggsave("/Users/leighannganzar/Desktop/Post-Doc/tidytuesday/tidytuesday/2022/2022-03-22/plot.png", 
+       height = 6, width = 10, dpi = 300)
 
 
 
