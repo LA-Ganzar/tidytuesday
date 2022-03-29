@@ -35,7 +35,7 @@ ggplot(sports_exp, aes(x = diff_mean, y = reorder(sports, -diff_mean), fill = po
     plot.caption.position="plot",
     plot.caption=element_text(hjust=0, size=8.3, color="grey20"),
     plot.title.position="plot",
-    plot.subtitle = element_text(size=9),
+    plot.subtitle = element_text(size=12),
     plot.margin = margin(t = 20,  
                          r = 50,  
                          b = 40,  
@@ -46,7 +46,7 @@ ggplot(sports_exp, aes(x = diff_mean, y = reorder(sports, -diff_mean), fill = po
   labs(x="Annual Spending Difference (in USD)",
        y = "",
        caption="\n#TidyTuesday week 13 | Data from Equity in Athletics Data Analysis | @laganzar",
-       title="College spending differential for sports that have both mens and womens teams",
+       title="College spending differential for sports that have both men's and women's teams",
        subtitle="Gymnastics has the largest differential in favor of women, while basketball spends more on men than women")
 ggsave("plot.png", height = 8, width = 12, bg="white")
 
