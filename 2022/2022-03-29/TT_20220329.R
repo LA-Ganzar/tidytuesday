@@ -23,6 +23,7 @@ sports_exp <- sports %>%
   mutate(pos = diff_mean >= 0) %>%
   na.omit()
 
+# Plot 
 ggplot(sports_exp, aes(x = diff_mean, y = reorder(sports, -diff_mean), fill = pos)) +
   geom_col(position = "identity") +
   scale_x_continuous(labels = comma) +
